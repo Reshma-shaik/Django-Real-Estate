@@ -25,9 +25,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-y59%bke8t#nsjfv%$%e1e(8iyxu$-$g*qs^v1b#33m=znzx&m^'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['reshma-django-realestate.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
