@@ -1,1 +1,1 @@
-web: unicorn Django-Real-Estate.wsgi --log-file -
+web: unicorn real_estate.wsgi --log-file -
