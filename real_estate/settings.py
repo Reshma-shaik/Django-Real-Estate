@@ -130,6 +130,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 heroku config:set DEBUG_COLLECTSTATIC=1
+    
+heroku config:set DISABLE_COLLECTSTATIC=1
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = 'static/'
