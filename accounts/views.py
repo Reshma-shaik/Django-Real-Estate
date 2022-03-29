@@ -4,6 +4,7 @@ import django
 from django.shortcuts import render, redirect
 from django.contrib import messages, auth
 from django.contrib.auth.models import User
+
 # Create your views here.
 def login(request):
     if request.method == 'POST':
@@ -13,7 +14,7 @@ def login(request):
         if user is not None:
             auth.login(request, user)
             messages.success(request, "Successfully Logged In")
-            return redirect('dashboard')
+            return redirect('/')
         else:
             messages.success(request, "Invalid Credentials")
             return redirect('login')
