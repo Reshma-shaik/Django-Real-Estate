@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-y59%bke8t#nsjfv%$%e1e(8iyxu$-$g*qs^v1b#33m=znzx&m^'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['reshma-django-realestate.herokuapp.com', '127.0.0.1']
 
@@ -135,8 +135,8 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'real_estate/static')
 ]
-STATICFILES_STORAGE =  'django.contrib.staticfiles.storage.StaticFilesStorage'
-# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# STATICFILES_STORAGE =  'django.contrib.staticfiles.storage.StaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 #Media Folder Settings
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
